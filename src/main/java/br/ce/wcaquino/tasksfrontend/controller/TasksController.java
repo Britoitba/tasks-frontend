@@ -44,6 +44,7 @@ public class TasksController {
 		return "add";
 	}
 
+	//teste
 	@PostMapping("save")
 	public String save(Todo todo, Model model) {
 		try {
@@ -60,6 +61,7 @@ public class TasksController {
 			model.addAttribute("todo", todo);
 			return "add"; 
 		} finally {
+
 			model.addAttribute("todos", getTodos());
 		}
 	}
